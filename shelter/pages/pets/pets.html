@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Pets</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="pets.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <a href="../main/index.html">
+                <div class="header_logo">
+                    <h1><span class="header_logo_title">Cozy House</span></h1>
+                    <span class="header_logo_subtitle">Shelter for pets in Boston</span>
+                </div>
+            </a>
+            <span class="hamburger">
+                <span class="hamburger_line"></span>
+            </span>
+            <nav class="header_menu">
+                <ul class="header_menu_list">
+                    <li><a href="../index/main.html">About the shelter</a></li>
+                    <li class="header_menu_item_active"><a href="">Our pets</a></li>
+                    <li>Help the shelter</li>
+                    <li>Contacts</li>
+                </ul>
+            </nav>
+            <div class="backdrop"></div>
+        </div>
+    </header>
+    <main>
+        <section class="our_friends">
+            <h3 class="our_friends_title">Our friends who<br>are looking for a house</h3>
+            <div class="our_friends_list"></div>
+            <div class="navigation_wrapper">
+                <button class="button_arrow_inactive" id="arrowLeftTotal"><h4><<</h4></button>
+                <button class="button_arrow_inactive" id="arrowLeft"><h4><</h4></button>
+                <button class="button_arrow_active"> <h4>1</h4> </button>
+                <button class="button_arrow" id="arrowRight"><h4>></h4></button>
+                <button class="button_arrow" id="arrowRightTotal"><h4>>></h4></button>
+            </div>
+        </section>
+        <section class="modal_window"></section>
+    </main>
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer_contacts">
+                <h3 class="footer_title">For questions and suggestions</h3>
+                <a href="mailto:email@shelter.com">
+                    <div class="footer_element">
+                        <object data="../../assets/images/icons/icon-email.svg" type="image/svg+xml" width="40px" height="32px"></object>
+                        <h4 class="footer_content">email@shelter.com</h4>
+                    </div>
+                </a>
+                <a href="tel:+136745677554">
+                    <div class="footer_element">
+                        <object data="../../assets/images/icons/icon-phone.svg" type="image/svg+xml" width="40px" height="32px"></object>
+                        <h4 class="footer_content">+13 674 567 75 54</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="footer_location">
+                <h3 class="footer_title">We are waiting for your visit</h3>
+                <a href="https://goo.gl/maps/TNwqXj8hhSVmSDVA8">
+                    <div class="footer_element">
+                        <object data="../../assets/images/icons/icon-marker.svg" type="image/svg+xml" width="22px" height="32px"></object>
+                        <h4 class="footer_content">1 Central Street, Boston <br>(entrance from the store)</h4>
+                    </div>
+                </a>
+                <a href="https://goo.gl/maps/fmXhjubAHvia7Acm9"></a>
+                <div class="footer_element">
+                    <object data="../../assets/images/icons/icon-marker.svg" type="image/svg+xml" width="22px" height="32px"></object>
+                    <h4 class="footer_content">18 South Park, London </h4>
+                </div>
+                </a>
+            </div>
+            <div class="footer_image">
+                <img src="../../assets/images/footer-puppy.png" alt="funny puppy">
+            </div>
+        </div>
+    </footer>
+    <script src="pets.js"></script>
+</body>
+
+</html>

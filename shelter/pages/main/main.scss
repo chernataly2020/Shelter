@@ -1,0 +1,1014 @@
+        * {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -o-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        
+         :root {
+            $color-light-s: #FAFAFA;
+            $color-light-l: #F6F6F6;
+            $color-light-xl: #FFFFFF;
+            $color-dark-s: #CDCDCD;
+            $color-dark-m: #B2B2B2;
+            $color-dark-l: #545454;
+            $color-dark-xl: #4C4C4C;
+            $color-dark-2xl: #444444;
+            $color-dark-3xl: #292929;
+            $color-primary: #F1CDB3;
+            $color-primary-light: #FDDCC4;
+        }
+        
+        html {
+            font-size: 10px;
+            width: 100%;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        h2 {
+            color: var($color-light-xl);
+            font-family: Georgia;
+            max-width: 31rem;
+            font-size: 4.4rem;
+            line-height: 130%;
+        }
+        
+        h3 {
+            font-family: Georgia;
+            font-size: 3.5rem;
+            line-height: 130%;
+            letter-spacing: 0.06em;
+            color: var($color-dark-l);
+        }
+        
+        p {
+            color: var($color-dark-s);
+            font-family: Arial;
+            width: 100%;
+            font-size: 1.5rem;
+            line-height: 160%;
+        }
+        
+        img {
+            width: 100%;
+            height: 100%;
+        }
+        
+        object {
+            pointer-events: none;
+        }
+        
+        .button_primary {
+            width: 20.7rem;
+            height: 5.2rem;
+            color: var($color-dark-xl);
+            background: var(--color-primary);
+            border: none;
+            border-radius: 10rem;
+            font-family: Georgia;
+            font-size: 1.7rem;
+            line-height: 130%;
+            letter-spacing: 0.06em;
+            &:hover {
+                transition-duration: 3s;
+                border: $color-primary-light;
+                background: $color-primary-light;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                cursor: pointer;
+            }
+        }
+        
+        .button_arrow {
+            width: 5.2rem;
+            height: 5.2rem;
+            color: var($color-dark-xl);
+            border: 0.2rem solid var(--color-primary);
+            border-radius: 10rem;
+            background: none;
+            margin: auto 0;
+            &:hover {
+                transition-duration: 3s;
+                border: $color-primary-light;
+                background: $color-primary-light;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                cursor: pointer;
+            }
+        }
+        
+        .button_arrow_right {
+            transform: rotate(180deg);
+            &:hover {
+                transition-duration: 3s;
+                border: $color-primary-light;
+                background: $color-primary-light;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                cursor: pointer;
+            }
+        }
+        
+        .button_secondary {
+            width: 18.7rem;
+            height: 5.2rem;
+            background: none;
+            border: 0.2rem solid var(--color-primary);
+            border-radius: 10rem;
+            font-family: Georgia;
+            font-size: 1.7rem;
+            line-height: 130%;
+            letter-spacing: 0.06em;
+            color: var($color-dark-xl);
+            &:hover {
+                transition-duration: 3s;
+                border: $color-primary-light;
+                background: $color-primary-light;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                cursor: pointer;
+            }
+        }
+        
+        .credit_card {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 1.5rem;
+            width: 34.9rem;
+            height: 4.3rem;
+            background: var(--color-primary);
+            border-radius: 0.9rem;
+            font-family: Georgia;
+            font-size: 2rem;
+            line-height: 115%;
+            letter-spacing: 0.06em;
+            color: var($color-dark-l);
+            &:hover {
+                cursor: pointer;
+                background-color: var($color-primary-light);
+            }
+        }
+        
+        @keyframes show {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(41, 41, 41, 0.6);
+        }
+        
+        .modal {
+            position: fixed;
+            left: calc( 50vw - 45rem);
+            top: calc( 50vh - 25rem);
+            width: 90rem;
+            height: 49.9rem;
+            border-radius: 0.9rem;
+            background-color: var($color-light-s);
+            display: flex;
+            overflow: hidden;
+            &:hover {
+                box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+            }
+            & .our_friends_card_img {
+                width: 50rem;
+                height: 50rem;
+                margin-right: 0.9rem;
+            }
+            & .content {
+                width: 35.1rem;
+                height: 36.2rem;
+                margin: 5rem 2rem 0;
+                color: #000000;
+            }
+            & .content h4 {
+                margin: 1rem 0 4rem;
+                font-family: Georgia;
+                font-size: 2rem;
+                line-height: 115%;
+                letter-spacing: 0.06em;
+            }
+            & .content h5 {
+                margin-bottom: 4.3rem;
+                font-family: Georgia;
+                font-size: 1.5rem;
+                line-height: 1.7rem;
+                letter-spacing: 0.06em;
+            }
+            & .content li {
+                list-style-type: disc;
+                color: var(--color-primary);
+                margin: 0 0 1.2rem 1.4rem;
+            }
+            & .our_friends_card_img {
+                width: 50rem;
+                height: 50rem;
+                margin-right: 0.9rem;
+            }
+            & .content {
+                width: 35.1rem;
+                height: 36.2rem;
+                margin: 5rem 2rem 0;
+                color: #000000;
+            }
+            & .content h4 {
+                margin: 1rem 0 4rem;
+                font-family: Georgia;
+                font-size: 2rem;
+                line-height: 115%;
+                letter-spacing: 0.06em;
+            }
+            & .content h5 {
+                margin-bottom: 4.3rem;
+                font-family: Georgia;
+                font-size: 1.5rem;
+                line-height: 1.7rem;
+                letter-spacing: 0.06em;
+            }
+            & .content li {
+                list-style-type: disc;
+                color: var(--color-primary);
+                margin: 0 0 1.2rem 1.4rem;
+            }
+            & .content li span b {
+                font-weight: bold;
+            }
+            & .content li span {
+                font-family: Georgia;
+                font-size: 1.5rem;
+                line-height: 110%;
+                letter-spacing: 0.06em;
+                color: #000000;
+            }
+            .modal_close_icon {
+                position: fixed;
+                top: calc( 50vh - 30rem);
+                left: calc( 50vw + 44rem);
+                cursor: pointer;
+                width: 5.2rem;
+                height: 5.2rem;
+                border: 2px solid var(--color-primary);
+                box-sizing: border-box;
+                border-radius: 10rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .content li span b {
+                font-weight: bold;
+            }
+            & .content li span {
+                font-family: Georgia;
+                font-size: 1.5rem;
+                line-height: 110%;
+                letter-spacing: 0.06em;
+                color: #000000;
+            }
+            .modal_close_icon {
+                position: fixed;
+                top: calc( 50vh - 30rem);
+                left: calc( 50vw + 44rem);
+                cursor: pointer;
+                width: 5.2rem;
+                height: 5.2rem;
+                border: 2px solid var(--color-primary);
+                box-sizing: border-box;
+                border-radius: 10rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        
+        .wrapper {
+            width: 120rem;
+            margin: 0 auto;
+            height: 100%;
+            display: flex;
+        }
+        
+        .background-gradient {
+            width: 100%;
+            background: url(../../assets/images/noise_transparent.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+        }
+        
+        .hamburger {
+            display: none;
+        }
+        
+        .backdrop {
+            display: none;
+        }
+        
+        .header {
+            width: 100vw;
+            max-width: 100%;
+            padding-top: 6rem;
+        }
+        
+        .header .wrapper {
+            justify-content: space-between;
+        }
+        
+        .header_logo {
+            display: flex;
+            flex-direction: column;
+            cursor: pointer;
+        }
+        
+        .header_logo_title {
+            color: var(--color-primary);
+            font-family: Georgia;
+            font-size: 3.2rem;
+            letter-spacing: 0.06em;
+            line-height: 110%;
+        }
+        
+        .header_logo_subtitle {
+            margin: 1rem 0 0 0.4rem;
+            color: var($color-light-xl);
+            font-family: Arial;
+            font-size: 1.3rem;
+            line-height: 110%;
+            letter-spacing: 0.1em;
+        }
+        
+        .header_menu {
+            display: flex;
+            width: 44.3rem;
+        }
+        
+        .header_menu_list {
+            color: var($color-dark-s);
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            font-family: Arial;
+            font-size: 1.5rem;
+            line-height: 160%;
+            cursor: default;
+        }
+        
+        .header_menu_item_active a {
+            border-bottom: 0.3rem solid var(--color-primary);
+            color: var($color-light-s);
+        }
+        
+        .header_menu_list li {
+            display: flex;
+            align-items: center;
+            color: var($color-dark-s);
+        }
+        
+        .header_menu_item_href a {
+            color: var($color-dark-s);
+        }
+        
+        .header_menu_list li a:hover {
+            color: var($color-light-s);
+            cursor: pointer;
+        }
+        
+        .not_only {
+            padding-top: 6rem;
+        }
+        
+        .not_only_content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-bottom: 8rem;
+            margin-right: 4.2rem;
+            max-width: 46rem;
+        }
+        
+        .not_only_text {
+            margin: 4.2rem 4.2rem 4.1rem 0;
+        }
+        
+        .not_only_image {
+            width: 100%;
+            height: 72.8rem;
+        }
+        
+        .about {
+            background-color: var($color-light-xl);
+        }
+        
+        .about .wrapper {
+            padding: 8rem 0 10rem 0;
+            height: 100%;
+            justify-content: center;
+        }
+        
+        .about_image {
+            margin-right: 12rem;
+        }
+        
+        .about_content {
+            margin-top: 1.4rem;
+        }
+        
+        .about_title {
+            max-width: 37rem;
+        }
+        
+        .about_text {
+            margin: 2.5rem auto 0 auto;
+            max-width: 43rem;
+            font-family: Arial;
+            font-size: 1.5rem;
+            line-height: 160%;
+            color: var($color-dark-xl);
+        }
+        
+        .our_friends {
+            background-color: var($color-light-l);
+            text-align: center;
+            padding: 7.9rem 0 10rem 0;
+        }
+        
+        .our_friends .wrapper {
+            justify-content: space-between;
+            margin: 5.9rem auto;
+        }
+        
+        .our_friends_slider {
+            display: flex;
+            width: 99rem;
+            justify-content: space-between;
+        }
+        
+        .our_friends_card {
+            width: 27rem;
+            padding-bottom: 3rem;
+            border-radius: 0.9rem;
+            background-color: var($color-light-s);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: 1s;
+            animation: show 3s 1;
+            animation-fill-mode: forwards;
+        }
+        
+        .our_friends_card:hover {
+            cursor: pointer;
+            background-color: var($color-light-xl);
+            box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+        }
+        
+        .our_friends_card_img {
+            width: 100%;
+            height: 27rem;
+        }
+        
+        .our_friends_name {
+            margin: 3.05rem 0;
+            font-family: Georgia;
+            font-size: 2rem;
+            line-height: 2.3rem;
+            letter-spacing: 0.06em;
+            color: var($color-dark-l);
+        }
+        
+        .our_friends .button_primary {
+            width: 26.1rem;
+            margin-top: 0.2rem;
+        }
+        
+        .help {
+            background-color: var($color-light-xl);
+            text-align: center;
+            padding: 8rem 0 9.8rem 0;
+        }
+        
+        .help_title {
+            margin-bottom: 0.5rem;
+        }
+        
+        .help_list_content {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 115rem;
+            margin: 0 auto;
+            justify-content: center;
+        }
+        
+        .help_list_item {
+            padding: 5.4rem 6rem 0 6rem;
+        }
+        
+        .help_item_text {
+            margin-top: 2.9rem;
+            font-family: Georgia;
+            font-size: 2rem;
+            line-height: 115%;
+            letter-spacing: 0.06em;
+            color: var($color-dark-l);
+        }
+        
+        .donation {
+            background-color: var($color-light-l);
+            padding: 8.3rem 0 10rem 0;
+        }
+        
+        .donation .wrapper {
+            height: 100%;
+            justify-content: center;
+        }
+        
+        .donation_img {
+            margin: 0.9rem 3rem 0 0;
+            max-width: 50.5rem;
+            max-height: 26.1rem;
+        }
+        
+        .donation_content {
+            max-width: 38rem;
+            ;
+        }
+        
+        .donation_title {
+            max-width: 30rem;
+        }
+        
+        .donation_text {
+            margin: 2.1rem 0;
+            font-family: Georgia;
+            font-size: 1.5rem;
+            line-height: 110%;
+            letter-spacing: 0.06em;
+            color: var($color-dark-l);
+        }
+        
+        .donation_description {
+            margin: 2rem 0 0.1rem 0;
+            font-family: Arial;
+            font-style: italic;
+            font-size: 1.2rem;
+            line-height: 150%;
+            color: var($color-dark-m);
+        }
+        
+        .footer {
+            padding-top: 4rem;
+        }
+        
+        .footer .wrapper {
+            justify-content: space-between;
+        }
+        
+        .footer_title {
+            margin-top: 1.6rem;
+            max-width: 27.9rem;
+            letter-spacing: 0.06em;
+            color: var($color-light-xl);
+        }
+        
+        .footer_contacts .footer_element {
+            margin-top: 4rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        .footer_location {
+            padding-right: 0.7rem;
+        }
+        
+        .footer_location .footer_element {
+            margin-top: 3.4rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        .footer_content {
+            font-family: Georgia;
+            font-size: 2rem;
+            line-height: 115%;
+            letter-spacing: 0.06em;
+            color: var(--color-primary);
+            margin-left: 2rem;
+        }
+        
+        @media(max-width: 1279px) {
+            .modal {
+                left: calc( 50vw - 31.5rem);
+                top: calc( 50vh - 17.5rem);
+                width: 63rem;
+                height: 35rem;
+            }
+            .modal .our_friends_card_img {
+                width: 35rem;
+                height: 35rem;
+                margin-right: 0.2rem;
+            }
+            .modal .content {
+                width: 26rem;
+                height: 30.3rem;
+                margin: 1rem 0.9rem 0;
+                color: #000000;
+            }
+            .modal .content h4 {
+                margin: 1rem 0 2rem;
+            }
+            .modal .content h5 {
+                margin-bottom: 2rem;
+                font-size: 1.3rem;
+                line-height: 1.5rem;
+                width: 26.1rem;
+            }
+            .modal .content li {
+                margin: 0 0 0.7rem 1.4rem;
+            }
+            .modal_close_icon {
+                top: calc( 50vh - 23rem);
+                left: calc( 50vw + 30.6rem);
+            }
+            .wrapper {
+                width: 100%;
+                padding: 0 3rem;
+            }
+            .header {
+                padding: 3rem 0 0.2rem 0;
+            }
+            .not_only .wrapper {
+                display: flex;
+                flex-direction: column;
+            }
+            .not_only_content {
+                max-width: 46rem;
+                margin: 0 auto;
+                padding-bottom: 10rem;
+            }
+            .not_only_content a {
+                margin: 0 auto;
+            }
+            .not_only_image {
+                max-width: 56.9rem;
+                max-height: 59.3rem;
+                margin: 0 0 0 auto;
+            }
+            .about .wrapper {
+                flex-wrap: wrap-reverse;
+                justify-content: center;
+                align-content: center;
+            }
+            .about_image {
+                margin: 8rem auto 0 auto;
+                max-width: 30rem;
+                max-height: 40.8rem;
+            }
+            .about_content {
+                margin: 0 16.9rem;
+            }
+            .about_text {
+                min-width: 43rem;
+            }
+            .our_friends {
+                padding-top: 8.2rem;
+            }
+            .our_friends .wrapper {
+                margin: 6rem 0;
+            }
+            .our_friends_slider {
+                max-width: 58rem;
+            }
+            .help_title {
+                margin-bottom: 0;
+            }
+            .help_list_content {
+                width: 63rem;
+                margin: 0 auto;
+                justify-content: space-between;
+            }
+            .help_list_item {
+                width: 17rem;
+                padding: 0;
+                margin-top: 5.5rem;
+            }
+            .donation .wrapper {
+                flex-wrap: wrap-reverse;
+                justify-content: center;
+                align-content: center;
+            }
+            .donation_img {
+                margin: 6.1rem auto 0 auto;
+                max-width: 50.5rem;
+                max-height: 26.1rem;
+            }
+            .footer {
+                padding-top: 3.1rem;
+            }
+            .footer .wrapper {
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+            .footer_title {
+                margin-top: 0;
+            }
+            .footer_image {
+                margin-top: 6.5rem;
+                max-width: 30rem;
+                max-height: 31rem;
+            }
+        }
+        
+        @media(max-width: 767px) {
+            .modal {
+                left: calc( 50vw - 12rem);
+                top: calc( 50vh - 17.5rem);
+                width: 24rem;
+                height: 34.1rem;
+                overflow: hidden;
+            }
+            .modal .our_friends_card_img {
+                display: none;
+            }
+            .modal .content {
+                width: 22rem;
+                height: 32.1rem;
+                margin: 1rem;
+            }
+            .modal .content h3 {
+                text-align: center;
+            }
+            .modal .content h4 {
+                text-align: center;
+                margin: 1rem 0;
+            }
+            .modal .content h5 {
+                margin: 2rem 0 2.4rem;
+                text-align: justify;
+                width: 22rem;
+            }
+            .modal_close_icon {
+                top: calc( 50vh - 22.7rem);
+                left: calc( 50vw + 9.8rem);
+            }
+            .credit_card {
+                margin: 0 auto;
+                padding: 1rem 1.5rem;
+                width: 28.1rem;
+                height: 4.3rem;
+                font-size: 1.5rem;
+                line-height: 110%;
+            }
+            .backdrop {
+                display: block;
+                position: fixed;
+                left: 100vw;
+                top: 0;
+                width: calc( 100vw - 32rem);
+                height: 100vh;
+                background: rgba(41, 41, 41, 0.6);
+                transition: left 0.2s linear;
+                z-index: 1;
+            }
+            .wrapper {
+                width: 100%;
+                padding: 0 1rem;
+            }
+            .not_only_title,
+            .about_title,
+            .our_friends_title,
+            .help_title,
+            .donation_title {
+                font-size: 2.5rem;
+                line-height: 130%;
+                letter-spacing: 0.06em;
+                text-align: center;
+            }
+            .header {
+                padding: 3rem 0 0 0;
+                min-height: 8.88rem;
+            }
+            .header_logo_burger {
+                position: fixed;
+                right: 12.6rem;
+                top: 3rem;
+                z-index: 5;
+            }
+            .hamburger {
+                display: inline-block;
+                position: absolute;
+                top: 4.9rem;
+                right: 5.3rem;
+                width: 3rem;
+                height: 2.2rem;
+                z-index: 5;
+            }
+            .hamburger_line,
+            .hamburger::before,
+            .hamburger::after {
+                display: inline-block;
+                content: "";
+                position: absolute;
+                background-color: var(--color-primary);
+                width: 100%;
+                height: 0.2rem;
+                transition: transform 0.2s ease;
+            }
+            .hamburger_line {
+                top: calc(50% - 0.1rem);
+            }
+            .hamburger::before {
+                top: 0;
+                left: 0;
+            }
+            .hamburger::after {
+                bottom: 0;
+                left: 0;
+            }
+            .show_close>.hamburger_line {
+                transform: translate(0, 0) rotate(90deg);
+            }
+            .show_close::before {
+                transform: translate(1.2rem, 1rem) rotate(90deg);
+            }
+            .show_close::after {
+                transform: translate(-1.2rem, -1rem) rotate(90deg);
+            }
+            .header_menu {
+                position: fixed;
+                top: 0;
+                right: -32rem;
+                background: var($color-dark-3xl);
+                width: 32rem;
+                height: 100vh;
+                overflow: hidden;
+                transition: transform 0.2s ease;
+            }
+            .show_header_menu {
+                transform: translateX(-32rem);
+            }
+            .show_header_menu+.backdrop {
+                left: 0;
+            }
+            .header_menu_list {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                font-size: 3.2rem;
+                line-height: 160%;
+            }
+            .header_menu_list li {
+                margin: 2rem 0;
+            }
+            .not_only {
+                padding-top: 6.2rem;
+            }
+            .not_only_content {
+                min-width: 30rem;
+                padding-bottom: 10.5rem;
+                text-align: center;
+            }
+            .not_only_title,
+            .about_title,
+            .donation_title {
+                margin: 0 auto;
+                max-width: 22.5rem;
+            }
+            .not_only_image {
+                max-width: 26rem;
+                max-height: 27.177rem;
+            }
+            .about .wrapper {
+                padding-top: 4.4rem;
+                padding-bottom: 4.24rem;
+            }
+            .about_image {
+                margin: 4.2rem auto 0 auto;
+                max-width: 26rem;
+                max-height: 35.36rem;
+            }
+            .about_content {
+                padding: 0;
+                margin: 0 2.5rem;
+            }
+            .about_title {
+                margin-bottom: 2.5rem;
+            }
+            .about_text {
+                margin: 2.2rem auto 0 auto;
+                min-width: 27rem;
+                text-align: justify;
+            }
+            .our_friends {
+                padding-top: 4rem;
+                padding-bottom: 4.2rem;
+            }
+            .our_friends .wrapper {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin: 4.2rem 0 0 0;
+            }
+            .our_friends_slider {
+                order: 0;
+                justify-content: center;
+                padding: 0 1.5rem;
+            }
+            .button_arrow {
+                order: 1;
+                margin: 1.8rem 4rem;
+            }
+            .our_friends .button_primary {
+                margin-top: 2.4rem;
+            }
+            .help {
+                padding: 4.2rem 0;
+            }
+            .help_title {
+                margin: 0 4.9rem 1.2rem 4.9rem;
+            }
+            .help_list_content {
+                width: 29rem;
+            }
+            .help_list_item {
+                width: 13rem;
+                margin-top: 3rem;
+            }
+            .help_list_item object {
+                width: 5rem;
+                height: 5rem;
+            }
+            .help_item_text {
+                font-size: 1.5rem;
+                line-height: 110%;
+                margin-top: 2rem;
+            }
+            .donation {
+                padding: 4.2rem 0;
+            }
+            .donation_img {
+                margin: 4.2rem auto 0 auto;
+                max-width: 26rem;
+                max-height: 13.52rem;
+            }
+            .donation_content {
+                max-width: 30rem;
+                ;
+            }
+            .donation_text {
+                margin: 2rem 1.3rem;
+                font-family: Arial;
+                font-size: 1.5rem;
+                line-height: 160%;
+                letter-spacing: 0;
+            }
+            .donation_description {
+                margin: 2rem 1rem 0 1rem;
+                text-align: justify;
+            }
+            .footer {
+                padding-top: 3.1rem;
+            }
+            .footer_location {
+                margin: 4rem 0;
+                padding: 0;
+            }
+            .footer_title {
+                font-size: 2.5rem;
+                line-height: 130%;
+                text-align: center;
+            }
+            .footer_contacts a .footer_element {
+                max-width: 25.1rem;
+                margin: 4rem auto 0;
+            }
+            .footer_contacts a:nth-child(3)>div {
+                max-width: 24rem;
+            }
+            .footer_location .footer_title {
+                margin-left: 0.8rem;
+            }
+            .footer_location a .footer_element {
+                margin: 4rem auto 0;
+            }
+            .footer_image {
+                margin: 0;
+                max-width: 26rem;
+                max-height: 26.9rem;
+            }
+        }
+        
+        @media(max-width: 319px) {
+            html {
+                width: 320px;
+            }
+        }
